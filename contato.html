@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Fúsion de Sabores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>Fúsion de Sabores</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="inclusao.html">Inclusão</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <section>
+      <h2>Entre em Contato Conosco</h2>
+      <p>
+        Se você tem dúvidas, sugestões ou gostaria de fazer uma reserva, entre em contato conosco! 
+        Preencha o formulário abaixo ou use os meios de contato alternativos.
+      </p>
+    </section>
+
+    <section>
+      <h3>Formulário de Contato</h3>
+      <form action="enviar_mensagem.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Outros Meios de Contato</h3>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>Email: contato@fusioodesabores.com</p>
+      <p>Endereço: Rua da Gastronomia, 123, Centro, São Paulo - SP</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fúsion de Sabores. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
