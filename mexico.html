@@ -1,136 +1,270 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <titleMéxico - Fúsion de Sabores</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>México</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background: linear-gradient(to right, #006847, #fff, #ce1126);
+      color: #333;
       margin: 0;
       padding: 0;
     }
-
     header {
-      background-color: #d32f2f;
-      color: white;
-      padding: 20px;
+      background-color: transparent;
       text-align: center;
+      padding: 30px 0;
+      font-weight: bold;
+      font-size: 3em;
+      letter-spacing: 5px;
+      color: #ce1126;
+      text-shadow: 1px 1px 2px #00000055;
     }
-
-    header h1 {
-      font-size: 2.5em;
-    }
-
-    nav a {
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
-    nav a:hover {
-      background-color: #c2185b;
-      border-radius: 5px;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    h2 {
-      font-size: 2.5em;
-      color: #d32f2f;
-      text-align: center;
-    }
-
-    .menu-items {
-      list-style: none;
-      padding: 0;
-      margin: 30px 0;
-    }
-
-    .menu-items li {
-      background-color: #ffffff;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-items h3 {
-      color: #d32f2f;
-    }
-
-    .menu-items p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    .order-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #d32f2f;
-      color: white;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .order-btn:hover {
-      background-color: #c2185b;
-    }
-
-    footer {
-      background-color: #d32f2f;
-      color: white;
+    nav {
+      background-color: #fff;
       text-align: center;
       padding: 10px;
-      position: relative;
-      width: 100%;
-      margin-top: 50px;
+      border-bottom: 2px solid #006847;
+    }
+    nav a {
+      color: #006847;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ce1126;
+      text-decoration: underline;
+    }
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
+      border-left: 5px solid #006847;
+      border-right: 5px solid #ce1126;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #006847;
+    }
+
+    /* Categorias títulos */
+    h3.category-title {
+      text-align: center;
+      font-weight: bold;
+      padding: 12px;
+      margin: 30px 0 15px 0;
+      border-radius: 6px;
+    }
+    h3.pratos {
+      background-color: #006847;
+      color: #fff;
+    }
+    h3.bebidas {
+      background-color: #4caf50;
+      color: #fff;
+      border: 2px solid #006847;
+    }
+    h3.sobremesas {
+      background-color: #ffebee;
+      color: #ce1126;
+      border: 2px solid #ce1126;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.menu-list li {
+      padding: 15px;
+      margin-bottom: 12px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+      transition: background-color 0.3s;
+    }
+    ul.menu-list li:hover {
+      background-color: #f3fff7;
+    }
+    ul.menu-list li strong {
+      display: block;
+      font-size: 1.2em;
+      color: #ce1126;
+      margin-bottom: 5px;
+      flex: 1 1 100%;
+    }
+    .price {
+      font-weight: bold;
+      margin-right: 15px;
+      white-space: nowrap;
+      color: #333;
+    }
+    .order-button {
+      background-color: #ce1126;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+    .order-button:hover {
+      background-color: #a60f1a;
+    }
+    footer {
+      background-color: #006847;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <header>🇲🇽 México</header>
 
-  <header>
-    <h1>México - Fúsion de Sabores</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="brasil.html">Brasil</a>
-      <a href="italia.html">Itália</a>
-      <a href="franca.html">França</a>
-      <a href="japao.html">Japão</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="promocoes.html">Promoções</a>
+    <a href="ajuda.html">Ajuda</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
 
-  <main>
-    <h2>Sabores do México</h2>
-    <ul class="menu-items">
+  <section>
+    <h2>🌮 Menu Mexicano Completo</h2>
+
+    <h3 class="category-title pratos">🌮 PRATOS TÍPICOS</h3>
+    <ul class="menu-list">
       <li>
-        <h3>Tacos</h3>
-        <p>Preço: R$ 25,00</p>
-        <p>Tacos com carne assada, guacamole, pico de gallo e molho picante.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20o%20taco" class="order-btn">Fazer Pedido</a>
+        <strong>Tacos al Pastor</strong>
+        <span>Tacos recheados com carne de porco marinada e abacaxi.</span>
+        <span class="price">R$ 35,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Tacos%20al%20Pastor" target="_blank" class="order-button">Pedir</a>
       </li>
       <li>
-        <h3>Guacamole com Nachos</h3>
-        <p>Preço: R$ 35,00</p>
-        <p>Guacamole fresco servido com nachos crocantes.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20guacamole%20com%20nachos" class="order-btn">Fazer Pedido</a>
+        <strong>Guacamole</strong>
+        <span>Purê de abacate com tomate, cebola e limão.</span>
+        <span class="price">R$ 20,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Guacamole" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Enchiladas</strong>
+        <span>Tortillas recheadas, cobertas com molho de chili e queijo.</span>
+        <span class="price">R$ 40,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Enchiladas" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Chiles en Nogada</strong>
+        <span>Pimentões recheados com carne e frutas, cobertos com molho de nozes.</span>
+        <span class="price">R$ 50,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Chiles%20en%20Nogada" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Quesadillas</strong>
+        <span>Tortillas recheadas com queijo e outros ingredientes.</span>
+        <span class="price">R$ 30,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Quesadillas" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Pozole</strong>
+        <span>Sopa tradicional de milho com carne de porco.</span>
+        <span class="price">R$ 45,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Pozole" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novos pratos -->
+      <li>
+        <strong>Tamales</strong>
+        <span>Massa de milho cozida no vapor recheada com carnes e especiarias.</span>
+        <span class="price">R$ 32,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Tamales" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Elote</strong>
+        <span>Milho grelhado com maionese, queijo, limão e pimenta.</span>
+        <span class="price">R$ 18,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Elote" target="_blank" class="order-button">Pedir</a>
       </li>
     </ul>
-  </main>
+
+    <h3 class="category-title bebidas">🍹 BEBIDAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Tequila</strong>
+        <span>Bebida alcoólica tradicional feita do agave.</span>
+        <span class="price">R$ 55,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Tequila" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Margarita</strong>
+        <span>Coquetel com tequila, suco de limão e triple sec.</span>
+        <span class="price">R$ 60,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Margarita" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Agua Fresca</strong>
+        <span>Bebida refrescante feita com frutas naturais e água.</span>
+        <span class="price">R$ 15,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Agua%20Fresca" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas bebidas -->
+      <li>
+        <strong>Horchata</strong>
+        <span>Bebida doce feita de arroz, leite e canela.</span>
+        <span class="price">R$ 18,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Horchata" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Michelada</strong>
+        <span>Cerveja temperada com limão, sal e especiarias.</span>
+        <span class="price">R$ 20,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Michelada" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+
+    <h3 class="category-title sobremesas">🍰 SOBREMESAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Churros</strong>
+        <span>Doce frito polvilhado com açúcar e canela.</span>
+        <span class="price">R$ 15,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Churros" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas sobremesas -->
+      <li>
+        <strong>Flan</strong>
+        <span>Pudim cremoso com caramelo.</span>
+        <span class="price">R$ 20,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Flan" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Pan de Muerto</strong>
+        <span>Pão doce tradicional do Dia dos Mortos.</span>
+        <span class="price">R$ 22,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Pan%20de%20Muerto" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+  </section>
 
   <footer>
-    &copy; 2025 Fúsion de Sabores | Todos os direitos reservados.
+    <p>&copy; 2025 Restaurante Internacional - México</p>
   </footer>
-
 </body>
 </html>
 

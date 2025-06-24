@@ -1,136 +1,273 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japão - Fúsion de Sabores</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japão</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background: linear-gradient(to right, #fff, #f5f5f5);
+      color: #333;
       margin: 0;
       padding: 0;
     }
 
     header {
-      background-color: #d32f2f;
-      color: white;
-      padding: 20px;
+      background-color: #ffffff;
       text-align: center;
+      padding: 30px 0;
+      font-weight: bold;
+      font-size: 3em;
+      letter-spacing: 5px;
+      color: #bc002d;
+      text-shadow: 1px 1px 2px #00000055;
     }
 
-    header h1 {
-      font-size: 2.5em;
+    nav {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 2px solid #bc002d;
     }
 
     nav a {
-      color: white;
-      padding: 10px 15px;
+      color: #bc002d;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
       font-size: 1.2em;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      background-color: #c2185b;
-      border-radius: 5px;
+      color: #77001a;
+      text-decoration: underline;
     }
 
-    main {
+    section {
+      margin: 20px auto;
       padding: 20px;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #bc002d;
     }
 
     h2 {
-      font-size: 2.5em;
-      color: #d32f2f;
-      text-align: center;
+      margin-bottom: 15px;
+      color: #bc002d;
     }
 
-    .menu-items {
+    /* Categorias títulos */
+    h3.category-title {
+      text-align: center;
+      font-weight: bold;
+      padding: 12px;
+      margin: 30px 0 15px 0;
+      border-radius: 6px;
+    }
+    h3.pratos {
+      background-color: #bc002d;
+      color: #fff;
+    }
+    h3.bebidas {
+      background-color: #f44336;
+      color: #fff;
+      border: 2px solid #bc002d;
+    }
+    h3.sobremesas {
+      background-color: #fce4ec;
+      color: #bc002d;
+      border: 2px solid #bc002d;
+    }
+
+    ul.menu-list {
       list-style: none;
       padding: 0;
-      margin: 30px 0;
+      margin: 0;
     }
 
-    .menu-items li {
-      background-color: #ffffff;
+    ul.menu-list li {
       padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-items h3 {
-      color: #d32f2f;
-    }
-
-    .menu-items p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    .order-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #d32f2f;
-      color: white;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
+      margin-bottom: 12px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       transition: background-color 0.3s;
     }
 
-    .order-btn:hover {
-      background-color: #c2185b;
+    ul.menu-list li:hover {
+      background-color: #fff0f0;
+    }
+
+    ul.menu-list li strong {
+      display: block;
+      font-size: 1.2em;
+      color: #bc002d;
+      margin-bottom: 5px;
+      flex: 1 1 100%;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-right: 15px;
+      white-space: nowrap;
+      color: #333;
+    }
+
+    .order-button {
+      background-color: #bc002d;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+
+    .order-button:hover {
+      background-color: #8a001f;
     }
 
     footer {
-      background-color: #d32f2f;
+      background-color: #bc002d;
       color: white;
       text-align: center;
-      padding: 10px;
-      position: relative;
-      width: 100%;
-      margin-top: 50px;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <header>🇯🇵 Japão</header>
 
-  <header>
-    <h1>Japão - Fúsion de Sabores</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="brasil.html">Brasil</a>
-      <a href="italia.html">Itália</a>
-      <a href="franca.html">França</a>
-      <a href="mexico.html">México</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="promocoes.html">Promoções</a>
+    <a href="ajuda.html">Ajuda</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
 
-  <main>
-    <h2>Sabores do Japão</h2>
-    <ul class="menu-items">
+  <section>
+    <h2>🍣 Menu Japonês Completo</h2>
+
+    <h3 class="category-title pratos">🍣 PRATOS TÍPICOS</h3>
+    <ul class="menu-list">
       <li>
-        <h3>Sushi</h3>
-        <p>Preço: R$ 60,00</p>
-        <p>Sushi tradicional com peixe fresco e arroz temperado.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20o%20sushi" class="order-btn">Fazer Pedido</a>
+        <strong>Sushi</strong>
+        <span>Bolinho de arroz com peixe cru, algas e wasabi.</span>
+        <span class="price">R$ 55,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Sushi" target="_blank" class="order-button">Pedir</a>
       </li>
       <li>
-        <h3>Tempura</h3>
-        <p>Preço: R$ 45,00</p>
-        <p>Legumes e camarões empanados e fritos, servidos com molho especial.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20o%20tempura" class="order-btn">Fazer Pedido</a>
+        <strong>Sashimi</strong>
+        <span>Fatias finas de peixe cru, servidas com molho shoyu.</span>
+        <span class="price">R$ 60,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Sashimi" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Tempurá</strong>
+        <span>Legumes e frutos do mar empanados e fritos.</span>
+        <span class="price">R$ 45,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Tempurá" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Ramen</strong>
+        <span>Sopa quente de macarrão com carne, ovos e vegetais no caldo.</span>
+        <span class="price">R$ 40,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Ramen" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Yakisoba</strong>
+        <span>Macarrão frito com legumes e carne ao molho oriental.</span>
+        <span class="price">R$ 38,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Yakisoba" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Gyoza</strong>
+        <span>Pastéis japoneses grelhados com recheio de carne e legumes.</span>
+        <span class="price">R$ 30,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Gyoza" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novos pratos -->
+      <li>
+        <strong>Okonomiyaki</strong>
+        <span>Panqueca salgada recheada com vegetais, carne e molho especial.</span>
+        <span class="price">R$ 42,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Okonomiyaki" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Takoyaki</strong>
+        <span>Bolinhos de polvo grelhados, servidos com molho e maionese.</span>
+        <span class="price">R$ 35,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Takoyaki" target="_blank" class="order-button">Pedir</a>
       </li>
     </ul>
-  </main>
+
+    <h3 class="category-title bebidas">🍶 BEBIDAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Sakê</strong>
+        <span>Bebida alcoólica tradicional feita de arroz fermentado.</span>
+        <span class="price">R$ 50,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Sakê" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Chá Verde</strong>
+        <span>Chá tradicional japonês com sabor suave e refrescante.</span>
+        <span class="price">R$ 15,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Chá%20Verde" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas bebidas -->
+      <li>
+        <strong>Umeshu</strong>
+        <span>Licores de ameixa japonesa doce e suave.</span>
+        <span class="price">R$ 45,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Umeshu" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Ramune</strong>
+        <span>Refrigerante japonês com sabor único e garrafa tradicional.</span>
+        <span class="price">R$ 12,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Ramune" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+
+    <h3 class="category-title sobremesas">🍮 SOBREMESAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Mochi</strong>
+        <span>Docinho de arroz glutinoso com recheios variados.</span>
+        <span class="price">R$ 20,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Mochi" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas sobremesas -->
+      <li>
+        <strong>Daifuku</strong>
+        <span>Mochi recheado com pasta de feijão doce.</span>
+        <span class="price">R$ 22,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Daifuku" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Matcha Ice Cream</strong>
+        <span>Sorvete de chá verde tradicional japonês.</span>
+        <span class="price">R$ 25,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Matcha%20Ice%20Cream" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+  </section>
 
   <footer>
-    &copy; 2025 Fúsion de Sabores | Todos os direitos reservados.
+    <p>&copy; 2025 Restaurante Internacional - Japão</p>
   </footer>
-
 </body>
 </html>
-

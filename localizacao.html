@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Equipe - Fúsion de Sabores</title>
+  <title>Localização - Fúsion de Sabores</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -39,33 +39,39 @@
     }
     section {
       max-width: 900px;
-      margin: 20px auto;
       background-color: #ffffff;
-      color: #333;
+      margin: 20px auto;
       padding: 25px;
       border-radius: 8px;
+      color: #333;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-align: center;
     }
     h2 {
       color: #2e3a59;
       margin-bottom: 20px;
-      text-align: center;
     }
-    .team-member {
-      margin: 20px 0;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      background-color: #f9f9f9;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    .info {
+      margin-top: 20px;
+      font-size: 1.1em;
+      text-align: left;
     }
-    .team-member h3 {
-      color: #2e3a59;
-      margin-bottom: 5px;
+    .info p {
+      margin: 10px 0;
     }
-    .team-member p {
-      font-size: 1em;
-      color: #555;
+    .info strong {
+      color: #1f2a40;
+    }
+    .map-container {
+      margin-top: 25px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
     }
     footer {
       background-color: #1f2a40;
@@ -80,7 +86,7 @@
 
   <header>
     <h1>Fúsion de Sabores</h1>
-    <p style="font-size: 1.2em; color: #ccc;">Nossa Equipe</p>
+    <p style="font-size: 1.2em; color: #ccc;">Nossa localização</p>
   </header>
 
   <nav>
@@ -90,34 +96,33 @@
     <a href="promocoes.html">Promoções</a>
     <a href="ajuda.html">Ajuda</a>
     <a href="localizacao.html">Localização</a>
-    <a href="equipe.html">Equipe</a>
   </nav>
 
   <section>
-    <h2>👥 Conheça a Equipe</h2>
+    <h2>📍 Onde Estamos</h2>
 
-    <div class="team-member">
-      <h3>Renato</h3>
-      <p><strong>Gerente e Criador do Site</strong></p>
-      <p>Responsável por liderar o projeto digital e garantir que o site ofereça uma ótima experiência para os usuários.</p>
+    <div class="info">
+      <p><strong>Endereço:</strong> Av. Sabores do Mundo, 123 - Centro Gastronômico, São Paulo - SP</p>
+      <p><strong>CEP:</strong> 01001-000</p>
+      <p><strong>Telefone:</strong> (11) 99999-9999</p>
     </div>
 
-    <div class="team-member">
-      <h3>Ana Beatriz</h3>
-      <p><strong>Líder Geral</strong></p>
-      <p>Coordena a equipe e organiza todos os setores do restaurante, garantindo o bom funcionamento da Fúsion de Sabores.</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3287967090155!2d-46.63610438544958!3d-23.556574367175487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bfa0e6b6a3%3A0x56e75469a4b4124d!2sPra%C3%A7a%20da%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1719099651234!5m2!1spt-BR!2sbr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
-    <div class="team-member">
-      <h3>Ana Clara</h3>
-      <p><strong>Redes Sociais e Comunicações</strong></p>
-      <p>Cuida da presença online da marca, redes sociais e comunicação com o público.</p>
-    </div>
+    <p style="font-size: 0.8em; color: #666;">*Localização ilustrativa no Centro de São Paulo</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Fúsion de Sabores - Equipe</p>
+    <p>&copy; 2025 Fúsion de Sabores - Localização</p>
   </footer>
 
 </body>
 </html>
+

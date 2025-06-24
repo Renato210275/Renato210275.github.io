@@ -1,135 +1,286 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>França - Fúsion de Sabores</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>França</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background: linear-gradient(to right, #0055A4, #fff, #EF4135);
+      color: #333;
       margin: 0;
       padding: 0;
     }
-
     header {
-      background-color: #d32f2f;
-      color: white;
-      padding: 20px;
+      background-color: transparent;
       text-align: center;
+      padding: 30px 0;
+      font-weight: bold;
+      font-size: 3em;
+      letter-spacing: 5px;
+      color: #EF4135;
+      text-shadow: 1px 1px 2px #00000055;
     }
-
-    header h1 {
-      font-size: 2.5em;
-    }
-
-    nav a {
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-size: 1.2em;
-    }
-
-    nav a:hover {
-      background-color: #c2185b;
-      border-radius: 5px;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    h2 {
-      font-size: 2.5em;
-      color: #d32f2f;
-      text-align: center;
-    }
-
-    .menu-items {
-      list-style: none;
-      padding: 0;
-      margin: 30px 0;
-    }
-
-    .menu-items li {
-      background-color: #ffffff;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu-items h3 {
-      color: #d32f2f;
-    }
-
-    .menu-items p {
-      font-size: 1.2em;
-      color: #555;
-    }
-
-    .order-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #d32f2f;
-      color: white;
-      font-size: 1.2em;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .order-btn:hover {
-      background-color: #c2185b;
-    }
-
-    footer {
-      background-color: #d32f2f;
-      color: white;
+    nav {
+      background-color: #fff;
       text-align: center;
       padding: 10px;
-      position: relative;
-      width: 100%;
-      margin-top: 50px;
+      border-bottom: 2px solid #0055A4;
+    }
+    nav a {
+      color: #0055A4;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #EF4135;
+      text-decoration: underline;
+    }
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
+      border-left: 5px solid #0055A4;
+      border-right: 5px solid #EF4135;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #0055A4;
+    }
+
+    /* Categoria títulos */
+    h3.category-title {
+      text-align: center;
+      font-weight: bold;
+      padding: 12px;
+      margin: 30px 0 15px 0;
+      border-radius: 6px;
+    }
+    h3.comida {
+      background-color: #0055A4;
+      color: #fff;
+    }
+    h3.bebida {
+      background-color: #EF4135;
+      color: #fff;
+      border: 2px solid #0055A4;
+    }
+    h3.sobremesa {
+      background-color: #f3f3f3;
+      color: #0055A4;
+      border: 2px solid #0055A4;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.menu-list li {
+      padding: 15px;
+      margin-bottom: 12px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.05);
+      transition: background-color 0.3s;
+    }
+    ul.menu-list li:hover {
+      background-color: #f3faff;
+    }
+    ul.menu-list li strong {
+      display: block;
+      font-size: 1.2em;
+      color: #EF4135;
+      margin-bottom: 5px;
+      flex: 1 1 100%;
+    }
+    .price {
+      font-weight: bold;
+      margin-right: 15px;
+      white-space: nowrap;
+      color: #333;
+    }
+    .order-button {
+      background-color: #EF4135;
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      white-space: nowrap;
+    }
+    .order-button:hover {
+      background-color: #b72b25;
+    }
+    footer {
+      background-color: #0055A4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <header>🇫🇷 França</header>
 
-  <header>
-    <h1>França - Fúsion de Sabores</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="brasil.html">Brasil</a>
-      <a href="italia.html">Itália</a>
-      <a href="japao.html">Japão</a>
-      <a href="mexico.html">México</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="promocoes.html">Promoções</a>
+    <a href="ajuda.html">Ajuda</a>
+    <a href="localizacao.html">Localização</a>
+  </nav>
 
-  <main>
-    <h2>Sabores da França</h2>
-    <ul class="menu-items">
+  <section>
+    <h2>🍽️ Menu Francês Completo</h2>
+
+    <h3 class="category-title comida">🍽️ PRATOS TÍPICOS</h3>
+    <ul class="menu-list">
       <li>
-        <h3>Croissant</h3>
-        <p>Preço: R$ 25,00</p>
-        <p>Delicioso croissant amanteigado, fresquinho e crocante.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20o%20croissant" class="order-btn">Fazer Pedido</a>
+        <strong>Coq au Vin</strong>
+        <span>Frango cozido lentamente em vinho tinto com cogumelos e cebolas.</span>
+        <span class="price">R$ 55,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Coq%20au%20Vin" target="_blank" class="order-button">Pedir</a>
       </li>
       <li>
-        <h3>Ratatouille</h3>
-        <p>Preço: R$ 45,00</p>
-        <p>Prato tradicional com legumes cozidos no azeite de oliva.</p>
-        <a href="https://wa.me/+55XX9999999999?text=Quero%20pedir%20o%20ratatouille" class="order-btn">Fazer Pedido</a>
+        <strong>Bouillabaisse</strong>
+        <span>Sopa tradicional de peixe e frutos do mar da Provença.</span>
+        <span class="price">R$ 60,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Bouillabaisse" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Ratatouille</strong>
+        <span>Refogado de legumes mediterrâneos temperados com ervas.</span>
+        <span class="price">R$ 35,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Ratatouille" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Quiche Lorraine</strong>
+        <span>Torta salgada com bacon, ovos e creme.</span>
+        <span class="price">R$ 28,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Quiche%20Lorraine" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Escargots</strong>
+        <span>Caracóis preparados com manteiga de alho e salsa.</span>
+        <span class="price">R$ 42,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Escargots" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Cassoulet</strong>
+        <span>Ensopado de feijão branco com carnes variadas.</span>
+        <span class="price">R$ 58,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Cassoulet" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Croque Monsieur</strong>
+        <span>Sanduíche quente com presunto, queijo e molho béchamel.</span>
+        <span class="price">R$ 25,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Croque%20Monsieur" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Soupe à l'oignon</strong>
+        <span>Sopa de cebola gratinada com queijo.</span>
+        <span class="price">R$ 30,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Soupe%20à%20l'onion" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novos pratos -->
+      <li>
+        <strong>Boeuf Bourguignon</strong>
+        <span>Ensopado de carne bovina cozida lentamente em vinho tinto.</span>
+        <span class="price">R$ 65,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Boeuf%20Bourguignon" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Salade Niçoise</strong>
+        <span>Salada tradicional com atum, ovos, azeitonas e legumes frescos.</span>
+        <span class="price">R$ 40,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Salade%20Niçoise" target="_blank" class="order-button">Pedir</a>
       </li>
     </ul>
-  </main>
+
+    <h3 class="category-title bebida">🥂 BEBIDAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Vinho Bordeaux</strong>
+        <span>Vinho tinto encorpado típico da região de Bordeaux.</span>
+        <span class="price">R$ 80,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Vinho%20Bordeaux" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Champagne</strong>
+        <span>Vinho espumante tradicional da região de Champagne.</span>
+        <span class="price">R$ 120,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Champagne" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Café Expresso</strong>
+        <span>Café forte servido em pequena quantidade.</span>
+        <span class="price">R$ 8,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Café%20Expresso" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas bebidas -->
+      <li>
+        <strong>Kir Royale</strong>
+        <span>Coquetel de champanhe com licor de cassis.</span>
+        <span class="price">R$ 30,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Kir%20Royale" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Pastis</strong>
+        <span>Bebida anisada típica do sul da França.</span>
+        <span class="price">R$ 25,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Pastis" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+
+    <h3 class="category-title sobremesa">🍰 SOBREMESAS</h3>
+    <ul class="menu-list">
+      <li>
+        <strong>Crêpe Suzette</strong>
+        <span>Panqueca fina com molho de laranja e licor flambado.</span>
+        <span class="price">R$ 22,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Crêpe%20Suzette" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Tarte Tatin</strong>
+        <span>Torta de maçã invertida caramelizada.</span>
+        <span class="price">R$ 24,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Tarte%20Tatin" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <!-- Novas sobremesas -->
+      <li>
+        <strong>Mousse de Chocolate</strong>
+        <span>Doce leve e aerado de chocolate.</span>
+        <span class="price">R$ 18,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Mousse%20de%20Chocolate" target="_blank" class="order-button">Pedir</a>
+      </li>
+      <li>
+        <strong>Macaron</strong>
+        <span>Doce delicado feito de merengue com recheios variados.</span>
+        <span class="price">R$ 20,00</span>
+        <a href="https://wa.me/5511999999999?text=Gostaria%20de%20pedir%20Macaron" target="_blank" class="order-button">Pedir</a>
+      </li>
+    </ul>
+  </section>
 
   <footer>
-    &copy; 2025 Fúsion de Sabores | Todos os direitos reservados.
+    <p>&copy; 2025 Restaurante Internacional - França</p>
   </footer>
-
 </body>
 </html>
